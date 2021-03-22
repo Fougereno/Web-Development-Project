@@ -1,131 +1,154 @@
-<!DOCTYPE html> <!-- <!DOCTYPE html> - Обязателен. Без не го работает, да, но тебя уволят тут же ))) -->
+<!DOCTYPE html> <!-- <!DOCTYPE html> - Обязателен. Без его работает, да, но тебя уволят тут же ))) -->
 <html lang="en"> <!-- Указывать язык сайта в lang тоже желательно -->
-    <head>
-        <meta charset="UTF-8"> <!-- Кодировка файла тоже всегда -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Это запрещает маштабирование на мобилках - тоже прописывай всегда! -->
-        <title>Document</title> <!-- тег title тоже всегда и везде -->
-        <link rel="stylesheet" href="reset.css">
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
+<head>  <!-- head и body у тебя имели отступы. Это не нужно. Отступы делаются во внутренних тегах 
+        для удобства понимания какой блок внутри какого лежит. Т.е. понимать уровни вложенности -->
+    <meta charset="UTF-8"> <!-- Кодировка файла тоже всегда -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Это запрещает 
+                                                                            маштабирование на мобилках - тоже прописывай всегда! -->
+    <title>Document</title> <!-- тег title тоже всегда и везде -->
+    <link rel="stylesheet" href="reset.css">
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">   <!-- Ранее я тебе рекомендовал оборачивать всю основную часть в нейкий один блок.
+                    Пусть у нас это убдет .app
+                    Обратил внимание, что у тебя маленький дисплей. Поэтому у .app тоже не будем делать отступ, для удосбва. -->
+    <div class="section">   <!-- Нам обязательно потребуются блоки на всю ширину, т.к. есть фоновые
+                            картинки и просто цвет, которые на всю ширину экрана. А внутри их уже
+                            будут блоки с классом wrapper. Сидывал тебе картику с коментариями по каркасу -->
         <div class="wrapper">
-            <div class="header">
-                <div class="logo">  
-                    <!-- your logo -->
-                </div>
-                <div class="menu">
-                    <!-- home about -->
-                </div>
-            </div>
-        </div>    
-        <div class="wrapper">
-            <div class="section-text">
-                <h1>Web development project</h1>
-                <p>Very suitable to support all web development projects</p>
-            </div>
-            <div class="section-btn">
-                <a href="#" class="btn btn_transparent">our services</a>
-                <a href="#" class="btn">Hire is now</a>
-            </div>
-            <div class="section-anchor">
-                <!-- img -->
-            </div>
-        </div>  
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">About us</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section_items">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-            </div>
-        </div> 
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Our services</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section-items">
-                <div class="btnitem">
-                    <div></div>
-                    <a href="#" class="item btn btn_transparent">Read more</a>
-                </div>
-                <!-- таких 6 штук -->
-            </div>
-        </div>  
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Latest works</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <div class="section-btn">
-                    <a href="#" class="btn btn_small">all</a>
-                    <a href="#" class="btn btn_small">web design</a>
-                    <a href="#" class="btn btn_small">ui/ux design</a>
-                    <a href="#" class="btn btn_small">mockups</a>
-                </div>
-            </div>
-            <div class="section-hoveritems">
-                <div class="hover-item"></div>
-                <!-- 6 штук -->
-            </div>
-            <a href="#" class="btn">view all</a>
-        </div>  
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Pricing Plan</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section-items">
-                <div class="price"></div>
-                <!-- 6 штук -->
-            </div>
+            ### <!-- Тут уже какой-то внутренний контент -->
         </div>
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Our Team Member</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section-items">
-                <div class="team"></div>
-                <!-- 3 штуки -->
-            </div>
+    </div>
+</div>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------
+    Все, что ниже, пусть будет для примера. сюда ничего не дописывай, только копируй при необходимости
+----------------------------------------------------------------------------------------------------->
+
+<br><br><br><br><br><br><br>
+<div class="wrapper">
+    <div class="header">
+        <div class="logo">  
+            <!-- your logo -->
         </div>
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Blog</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section-items">
-                <img>
-                <div class="product"></div>
-                <!-- 3 штуки -->
-            </div>
+        <div class="menu">
+            <!-- home about -->
         </div>
-        <div class="wrapper">
-            <div class="section-header">
-                <h1 class="section-header__heading">Contact us</h1>
-                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div class="section-items">
-                <img>
-                <div class="contacts"></div>
-                <!-- 3 штуки -->
-            </div>
-            <div class="blocks">
-                <div class="block">Your NAME</div>
-                <div class="block">Your Email</div>
-                <div class="block">Write Message</div>
-                <div class="block">SEND</div>
-            </div>
+    </div>
+</div>    
+<div class="wrapper">
+    <div class="section-text">
+        <h1>Web development project</h1>
+        <p>Very suitable to support all web development projects</p>
+    </div>
+    <div class="section-btn">
+        <a href="#" class="btn btn_transparent">our services</a>
+        <a href="#" class="btn">Hire is now</a>
+    </div>
+    <div class="section-anchor">
+        <!-- img -->
+    </div>
+</div>  
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">About us</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section_items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</div> 
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Our services</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section-items">
+        <div class="btnitem">
+            <div></div>
+            <a href="#" class="item btn btn_transparent">Read more</a>
         </div>
-        <div class="wrapper">
-            <div class="footer">
-               <p>All rights reserved</p>
-            </div>
-        </div>    
-    </body>
+        <!-- таких 6 штук -->
+    </div>
+</div>  
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Latest works</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="section-btn">
+            <a href="#" class="btn btn_small">all</a>
+            <a href="#" class="btn btn_small">web design</a>
+            <a href="#" class="btn btn_small">ui/ux design</a>
+            <a href="#" class="btn btn_small">mockups</a>
+        </div>
+    </div>
+    <div class="section-hoveritems">
+        <div class="hover-item"></div>
+        <!-- 6 штук -->
+    </div>
+    <a href="#" class="btn">view all</a>
+</div>  
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Pricing Plan</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section-items">
+        <div class="price"></div>
+        <!-- 6 штук -->
+    </div>
+</div>
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Our Team Member</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section-items">
+        <div class="team"></div>
+        <!-- 3 штуки -->
+    </div>
+</div>
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Blog</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section-items">
+        <img>
+        <div class="product"></div>
+        <!-- 3 штуки -->
+    </div>
+</div>
+<div class="wrapper">
+    <div class="section-header">
+        <h1 class="section-header__heading">Contact us</h1>
+        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </div>
+    <div class="section-items">
+        <img>
+        <div class="contacts"></div>
+        <!-- 3 штуки -->
+    </div>
+    <div class="blocks">
+        <div class="block">Your NAME</div>
+        <div class="block">Your Email</div>
+        <div class="block">Write Message</div>
+        <div class="block">SEND</div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="footer">
+        <p>All rights reserved</p>
+    </div>
+</div>
+
+</body>
 </html>
