@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: rgb(134, 146, 161);
+}
+
+.section-header{
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.section-header__heading{
+    font-weight: 700;
+    font-size: 30px;    
+    padding-bottom: 30px;
+}
+
+.section-header__text{
+    font-size: 15px;
+    max-width: 630px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.btn{
+    display: inline-flex;
+    margin: 12px;
+    min-height: 70px;
+    min-width: 220px;
+    background-color:#00897b;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    border: none;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_transparent{
+    background-color: transparent;
+    border: white solid 3px;
+}
+
+.btn_green{
+    color: #212121;
+    border-color: #00897b;
+}
+
+.btn_black{
+    color: #212121;
+    border-color: #212121;
+}
+
+.btn_small{
+    min-height: 55px;
+    min-width: 100px;
+    padding: 0 15px;
+}
+
+/*
+#fff 
+#212121 текст
+#00897b бирюзовые кнопки
+#e4fdf9 бирюзовый светлый фон
+#f0f1f1 серый 
+#3949ab цена, синий
+*/ 
