@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
 <div class="app">
     <div class="section">
         <div class="wrapper">
@@ -25,27 +26,50 @@
                     <div class="header__item">Blog</div>
                     <div class="header__item">Contact us</div>  
                     <img class="header__item" src="img/icon.png">             
+=======
+<div class="app">   <!-- Ранее я тебе рекомендовал оборачивать всю основную часть в нейкий один блок.
+                    Пусть у нас это убдет .app
+                    Обратил внимание, что у тебя маленький дисплей. Поэтому у .app тоже не будем делать отступ, для удосбва. -->
+    <div class="vhblock">
+        <div class="section">   <!-- Нам обязательно потребуются блоки на всю ширину, т.к. есть фоновые
+                                картинки и просто цвет, которые на всю ширину экрана. А внутри их уже
+                                будут блоки с классом wrapper. Сидывал тебе картику с коментариями по каркасу -->
+            <div class="wrapper hide">
+                <div class="header">
+                    <div class="header__logo">  
+                    <div class="header__item">Your Logo</div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__item">Home</div>
+                        <div class="header__item">About</div>
+                        <div class="header__item">Servicing</div>
+                        <div class="header__item">Portfolio</div>
+                        <div class="header__item">Blog</div>
+                        <div class="header__item">Contact us</div>  
+                        <img class="header__item" src="img/icon.png">             
+                    </div>
+>>>>>>> 1042409fc06a4c4db06440e2b6cb52b15f43297c
                 </div>
             </div>
         </div>
+        <div class="section_img">
+            <div class="section_img__overlay">
+                <div class="wrapper">
+                    <div class="section-text">
+                        <h1>Web development project</h1>
+                        <p>Very suitable to support all web development projects</p>
+                    </div>
+                    <div class="section-btn">
+                        <a href="#" class="btn btn_transparent">our services</a>
+                        <a href="#" class="btn">Hire is now</a>
+                    </div>
+                    <div class="section-anchor">
+                        <img src="../Web-Development-Project/img/anchor.png">
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
-    <div class="section_img">
-        <div class="section_img__overlay">
-            <div class="wrapper">
-                <div class="section-text">
-                    <h1>Web development project</h1>
-                    <p>Very suitable to support all web development projects</p>
-                </div>
-                <div class="section-btn">
-                    <a href="#" class="btn btn_transparent">our services</a>
-                    <a href="#" class="btn">Hire is now</a>
-                </div>
-                <div class="section-anchor">
-                    <img src="../Web-Development-Project/img/anchor.png">
-                </div>
-            </div>
-        </div>
-    </div>  
 </div>
 
 

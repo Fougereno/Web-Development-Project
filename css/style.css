@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+.vhblock {
+    height: 100vh; 
+}
+
 .wrapper {
     max-width: 1170px;
     margin: 0 auto; 
@@ -30,8 +38,6 @@
 .section_img {
     background: url(../img/background.png) no-repeat; 
     background-size: cover;
-    height: 100vh; 
-    /* не только этот блок, переделать */
 }
 
 .section_img__overlay {
@@ -70,18 +76,22 @@
     padding-top: 130px;
 }
 
-.section-text h1{
+.section-text h1 {
     font-size: 60px;
 }
 
-.section-text p{
+.section-text p {
     font-size: 25px;
     padding: 0 0 15px 0;
     margin: 0;
 }
 
-.section-btn{
+.section-btn {
     padding: 100px 0;
+}
+
+.section-anchor{
+    padding-bottom: 80px;
 }
 
 .btn {
@@ -121,6 +131,40 @@
     min-width: 100px;
     padding: 0 15px;
 }
+
+@media screen and (max-width: 1015px) {
+	
+    .header{
+        padding: 46px 15px;
+    }
+    
+    .header__item {
+        padding:5px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    .section-img, .header {
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.hide {
+		display: none;
+	}
+    .section-text h1 {
+        font-size: 40px;
+        padding: 0 5px;
+    }
+    .section-anchor {
+        padding-bottom: 20px;
+    }
+}
+
 
 /*
 #fff 
