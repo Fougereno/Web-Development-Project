@@ -1,23 +1,17 @@
-<!DOCTYPE html> <!-- <!DOCTYPE html> - Обязателен. Без его работает, да, но тебя уволят тут же ))) -->
-<html lang="en"> <!-- Указывать язык сайта в lang тоже желательно -->
-<head>  <!-- head и body у тебя имели отступы. Это не нужно. Отступы делаются во внутренних тегах 
-        для удобства понимания какой блок внутри какого лежит. Т.е. понимать уровни вложенности -->
-    <meta charset="UTF-8"> <!-- Кодировка файла тоже всегда -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Это запрещает 
-                                                                            маштабирование на мобилках - тоже прописывай всегда! -->
-    <title>Document</title> <!-- тег title тоже всегда и везде -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app">   <!-- Ранее я тебе рекомендовал оборачивать всю основную часть в нейкий один блок.
-                    Пусть у нас это убдет .app
-                    Обратил внимание, что у тебя маленький дисплей. Поэтому у .app тоже не будем делать отступ, для удосбва. -->
-    <div class="section">   <!-- Нам обязательно потребуются блоки на всю ширину, т.к. есть фоновые
-                            картинки и просто цвет, которые на всю ширину экрана. А внутри их уже
-                            будут блоки с классом wrapper. Сидывал тебе картику с коментариями по каркасу -->
+<div class="app">
+    <div class="section">
         <div class="wrapper">
             <div class="header">
                 <div class="header__logo">  
