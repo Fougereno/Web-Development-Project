@@ -100,12 +100,10 @@ body {
     color: #212121;
     border-color: #00897b;
 }
-
 .btn_black {
     color: #212121;
     border-color: #212121;
 }
-
 .btn_small {
     min-height: 55px;
     min-width: 100px;
