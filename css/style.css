@@ -58,7 +58,6 @@ body {
     padding: 0 24px;    
 }
 .section-text {
-    /* почему тут margin, если есть reset.css. хм */
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding-top: 130px;
