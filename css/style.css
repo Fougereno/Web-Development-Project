@@ -28,7 +28,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;    
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .section-header__text {
     font-family: 'Open Sans', sans-serif;
@@ -73,13 +73,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 130px;
 }
-
 .h1 {
     font-size: 60px;
     padding: 40px;
-}
-.section-text p {
-    font-size: 25px;
 }
 .section-btn {
     display: flex;
@@ -133,8 +129,11 @@ body {
 }
 .section-items{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .section-items__item{
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,8 +152,16 @@ body {
 .section-header_small h1{
     font-size: 20px;
 }
-.section-header_small p{
-    font-weight: 400;
+.section-blue {
+    background-color: #e4fdf9;
+}
+.section-items_btnitems {
+    max-width: 370px;
+    min-height: 440px;
+    width: 30%;
+    margin: 15px;
+    padding: 50px;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 1015px) {
