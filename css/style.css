@@ -1,46 +1,46 @@
-*{
+* {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
 }
-
 .vhblock {
     height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
-
 .wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto; 
     text-align: center;   
 }
-
-.section-header {
+.header__item a{
     color: #212121;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    text-decoration: none;
 }
-
 .section-header__heading {
     font-weight: 700;
     font-size: 30px;    
     padding-bottom: 30px;
 }
-
 .section-header__text {
     font-size: 15px;
     max-width: 630px;
     margin: 0 auto;
     line-height: 1.5;
 }
-
 .section_img {
     background: url(../img/background.png) no-repeat; 
     background-size: cover;
+    height: 100%;
 }
-
-.section_img__overlay {
+.section__overlay {
     background: rgba( 0,0,0,0.5);
     width: 100%;
     height: 100%;
@@ -55,48 +55,44 @@ body {
     font-weight: 700;
     font-size: 25px;
 }
-
 .header {
-    padding: 46px 0;
+    height: 120px;
+    align-items: center;
 }
-
 .header__menu img {
     
     align-self: center;
 }
-
 .header__item {
     padding: 0 24px;    
 }
-
 .section-text {
-    /* почему тут margin, если есть reset.css. хм */
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding-top: 130px;
 }
 
-.section-text h1 {
+.h1 {
     font-size: 60px;
+    padding: 40px;
 }
-
 .section-text p {
     font-size: 25px;
-    padding: 0 0 15px 0;
-    margin: 0;
 }
-
 .section-btn {
+    display: flex;
+    justify-content: center;
     padding: 100px 0;
 }
-
-.section-anchor{
+.btn-inner {
+    padding: 12px;
+}
+.section-anchor {
     padding-bottom: 80px;
 }
 
 .btn {
     display: inline-flex;
-    margin: 12px;
     min-height: 70px;
     min-width: 220px;
     background-color:#00897b;
@@ -110,22 +106,18 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .btn_transparent {
     background-color: transparent;
     border: white solid 3px;
 }
-
 .btn_green {
     color: #212121;
     border-color: #00897b;
 }
-
 .btn_black {
     color: #212121;
     border-color: #212121;
 }
-
 .btn_small {
     min-height: 55px;
     min-width: 100px;
@@ -133,25 +125,19 @@ body {
 }
 
 @media screen and (max-width: 1015px) {
-	
     .header{
         padding: 46px 15px;
     }
-    
     .header__item {
         padding:5px;
         font-size: 15px;
     }
-
 }
-
 @media screen and (max-width: 860px) {
-
-    .section-img, .header {
+    .section_img, .header {
 		font-size: small;
 	}
 }
-
 @media screen and (max-width: 414px) {
 	.hide {
 		display: none;
