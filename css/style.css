@@ -60,7 +60,6 @@ body {
     align-items: center;
 }
 .header__menu img {
-    
     align-self: center;
 }
 .header__item {
@@ -90,9 +89,10 @@ body {
 .section-anchor {
     padding-bottom: 80px;
 }
-
 .btn {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-height: 70px;
     min-width: 220px;
     background-color:#00897b;
@@ -101,10 +101,8 @@ body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;    
-    border: none;
     letter-spacing: 1px;
-    align-items: center;
-    justify-content: center;
+    border: 0 none;
 }
 .btn_transparent {
     background-color: transparent;
@@ -142,9 +140,18 @@ body {
 	.hide {
 		display: none;
 	}
-    .section-text h1 {
-        font-size: 40px;
-        padding: 0 5px;
+    .section-text{
+        padding: 40px;
+    }
+    .h1 {
+        font-size: 30px;
+        padding: 20px 5px;
+    }
+    .section-text p{
+        font-size: small;
+    }
+    .section-btn{
+        flex-direction: column;
     }
     .section-anchor {
         padding-bottom: 20px;
