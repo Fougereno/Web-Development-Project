@@ -25,12 +25,15 @@ body {
     text-decoration: none;
 }
 .section-header__heading {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;    
     padding-bottom: 30px;
 }
 .section-header__text {
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    font-weight: 500;
     max-width: 630px;
     margin: 0 auto;
     line-height: 1.5;
@@ -46,7 +49,7 @@ body {
     height: 100%;
 }
 
-.header, .header__menu, .header__logo {
+.header, .header__menu, .header__logo, .section-header {
     display: flex;
     color: #212121;
     font-family: 'Open Sans', sans-serif;
@@ -120,6 +123,38 @@ body {
     min-height: 55px;
     min-width: 100px;
     padding: 0 15px;
+}
+.section-wrapper{
+    padding: 130px 0;
+}
+.section-header {
+    flex-direction: column;
+    padding-bottom: 110px;
+}
+.section-items{
+    display: flex;
+}
+.section-items__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 200px;
+}
+.section-items__item img{
+    max-width: 100px;
+	max-height:100px;
+}
+.section-header_small{
+    padding: 0;
+}
+.section-header_small h1{
+    font-size: 20px;
+}
+.section-header_small p{
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1015px) {
