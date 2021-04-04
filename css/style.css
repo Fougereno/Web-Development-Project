@@ -188,16 +188,22 @@ body {
 .section-items_btnitems {
     max-width: 370px;
     min-height: 440px;
-    width: 30%;
+    width: 100%;
     padding: 50px;
     background-color: #fff;
+}
+.section-items__inner {
+    width: 30%;
+    padding: 15px;
 }
 .btnitems-inner {
     padding:15px;
 }
-.btnitem_green {
-    color: #fff;
-    background-color: #00897b;
+.btnimg {
+    position: relative;
+    z-index: 1;
+    display: none;
+    
 }
 .btnitem-header {
     padding: 40px 0;
@@ -222,7 +228,7 @@ body {
 }
 .hover-item {
     position: relative;
-    width:30%;
+    width: 100%;
 }
 .hover-item__overlay {
     display: none;
@@ -270,6 +276,20 @@ body {
 
 .hover-item:hover .hover-item__overlay {
     display: block;
+}
+.section-items_btnitems:hover a{
+    border: white solid 3px;
+    color: #fff;
+}
+.section-items_btnitems:hover {
+    color: #fff;
+    background: #00897b;
+}
+.section-items_btnitems:hover .btnimg{
+    display: block;
+}
+.section-items_btnitems:hover .btnimg-black{
+    display: none;
 }
 
 @media screen and (max-width: 1015px) {
