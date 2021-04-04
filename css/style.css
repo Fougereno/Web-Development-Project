@@ -45,7 +45,7 @@ body {
     line-height: 1.5;
 }
 .section_img {
-    background: url(../img/background.png) no-repeat; 
+    background: url(../img/background.png) no-repeat center center; 
     background-size: cover;
     height: 100%;
 }
@@ -141,8 +141,7 @@ body {
 .section-items__item{
     width: 30%;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     align-items: center;
     padding: 0 70px;
     font-family: 'Open Sans', sans-serif;
@@ -186,11 +185,20 @@ body {
     line-height: 1.5;
 }
 .section-items_btnitems {
+    display: flex;
+    flex-direction: column;    
+    font-family: 'Open Sans', sans-serif;
+    min-height: 200px;
     max-width: 370px;
     min-height: 440px;
     width: 100%;
     padding: 50px;
     background-color: #fff;
+}
+.section-items_btnitems img {
+    align-self: center;
+    max-width: 100px;
+    max-height: 100px;
 }
 .section-items__inner {
     width: 30%;
@@ -300,11 +308,36 @@ body {
         padding:5px;
         font-size: 15px;
     }
+    .section-items__item {
+        padding: 0 30px;
+    }
 }
 @media screen and (max-width: 860px) {
     .section_img, .header {
 		font-size: small;
 	}
+    .section-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-items__item {
+        width: auto;
+        max-width: 500px;
+    }
+    .section-items__inner {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 470px) {
+    .section-btn {
+    flex-direction: column;
+    }
+    .section-items__inner {
+        width: auto;
+    }
 }
 @media screen and (max-width: 414px) {
 	.hide {
@@ -314,17 +347,17 @@ body {
         padding: 40px;
     }
     .h1 {
-        font-size: 30px;
-        padding: 20px 5px;
+        font-size: 25px;
+        padding: 40px 5px;
     }
     .section-text p{
-        font-size: 22px;
+        font-size: 18px;
     }
     .section-btn{
         flex-direction: column;
     }
     .section-anchor {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 }
 
