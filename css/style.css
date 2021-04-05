@@ -125,6 +125,12 @@ body {
     min-height: 55px;
     min-width: 100px;
     padding: 0 15px;
+    background-color: transparent;
+    border: black solid 3px;
+    color: #212121;
+}
+.btn_active {
+    border-color: #00897b;
 }
 .section-wrapper{
     padding: 130px 0;
@@ -311,6 +317,11 @@ body {
     .section-items__item {
         padding: 0 30px;
     }
+}
+.btn_active:active {
+    color: #fff;
+    background-color:#00897b;
+    border: none;
 }
 @media screen and (max-width: 860px) {
     .section_img, .header {
