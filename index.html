@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title> 
+    <link rel="stylesheet" href="../Web-Development-Project/css/reset.css">
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -13,40 +13,273 @@
 <div class="app">
     <div class="vhblock">
         <div class="section">
-            <div class="wrapper hide">
+            <div class="wrapper ">
                 <div class="header">
                     <div class="header__logo">  
                     <div class="header__item">Your Logo</div>
                     </div>
                     <div class="header__menu">
-                        <div class="header__item">Home</div>
-                        <div class="header__item">About</div>
-                        <div class="header__item">Servicing</div>
-                        <div class="header__item">Portfolio</div>
-                        <div class="header__item">Blog</div>
-                        <div class="header__item">Contact us</div>  
+                        <div class="header__item hide">
+                            <a href="#">Home</a>                                
+                        </div>
+                        <div class="header__item hide">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="header__item hide">
+                            <a href="#">Servicing</a>
+                        </div>
+                        <div class="header__item hide">
+                            <a href="#">Portfolio</a>
+                        </div>
+                        <div class="header__item hide">
+                            <a href="#">Blog</a>
+                        </div>
+                        <div class="header__item hide">
+                            <a href="#">Contact us</a>
+                        </div>  
                         <img class="header__item" src="img/icon.png">             
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section_img">
-            <div class="section_img__overlay">
+        <div class="section section_img">
+            <div class="section__overlay">
                 <div class="wrapper">
-                    <div class="section-text">
-                        <h1>Web development project</h1>
-                        <p>Very suitable to support all web development projects</p>
-                    </div>
-                    <div class="section-btn">
-                        <a href="#" class="btn btn_transparent">our services</a>
-                        <a href="#" class="btn">Hire is now</a>
+                    <div class="inner-wrapper">
+                        <div class="section-text">
+                            <h1 class="h1">Web development project</h1>
+                            <p>Very suitable to support all web development projects</p>
+                        </div>
+                        <div class="section-btn">
+                            <div class="btn-inner">
+                                <a href="#" class="btn btn_transparent">our services</a>
+                            </div>
+                            <div class="btn-inner">
+                                <a href="#" class="btn">Hire is now</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="section-anchor">
-                        <img src="../Web-Development-Project/img/anchor.png">
+                        <a href="#">
+                            <img src="../Web-Development-Project/img/anchor.png">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>  
+    </div>
+    <div class="wrapper section-wrapper">
+        <div class="section-header">
+            <h2 class="section-header__heading">About us</h2>
+            <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        </div>
+        <div class="section-items">
+            <div class="section-items__item">
+                <img src="./img/глобус.png">
+                <div class="section-items-header">
+                    <h3 class="section-items-heading">Awesome icons</h3>
+                    <p class="section-items-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+            <div class="section-items__item">
+                <img src="./img/люди.png">
+                <div class="section-items-header">
+                    <h3 class="section-items-heading">One page</h3>
+                    <p class="section-items-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+            <div class="section-items__item">
+                <img src="./img/лицо.png">
+                <div class="section-items-header">
+                    <h3 class="section-items-heading">Fully responsive</h3>
+                    <p class="section-items-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="section-blue">
+        <div class="wrapper section-wrapper">
+            <div class="section-header">
+                <h2 class="section-header__heading">Our services</h2>
+                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="section-items">
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">
+                        <img class="btnimg-black"src="./img/телефон.png">
+                        <img class="btnimg" src="./img/белый_телефон.png">
+                        <div class="btnitem-header">
+                            <h3 class="btnitem-heading">Portfolio</h3>
+                            <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        </div>                        
+                        <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                        
+                    </div>
+                </div>
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">
+                        <img class="btnimg-black"src="./img/телефон.png">
+                        <img class="btnimg" src="./img/белый_телефон.png">
+                        <div class="btnitem-header">
+                            <h3 class="btnitem-heading">Portfolio</h3>
+                            <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        </div>                        
+                        <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                        
+                    </div>
+                </div>
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">
+                        <img class="btnimg-black"src="./img/телефон.png">
+                        <img class="btnimg" src="./img/белый_телефон.png">
+                        <div class="btnitem-header">
+                            <h3 class="btnitem-heading">Portfolio</h3>
+                            <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        </div>                        
+                        <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                        
+                    </div>
+                </div>
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">                    
+                            <img class="btnimg-black"src="./img/телефон.png">
+                            <img class="btnimg" src="./img/белый_телефон.png">
+                            <div class="btnitem-header">
+                                <h3 class="btnitem-heading">Portfolio</h3>
+                                <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                            </div>
+                            <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                                      
+                    </div>
+                </div>  
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">
+                        <img class="btnimg-black"src="./img/телефон.png">
+                        <img class="btnimg" src="./img/белый_телефон.png">
+                        <div class="btnitem-header">
+                            <h3 class="btnitem-heading">Portfolio</h3>
+                            <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        </div>                        
+                        <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                        
+                    </div>
+                </div>
+                <div class="section-items__inner">
+                    <div class="section-items_btnitems">
+                        <img class="btnimg-black"src="./img/телефон.png">
+                        <img class="btnimg" src="./img/белый_телефон.png">
+                        <div class="btnitem-header">
+                            <h3 class="btnitem-heading">Portfolio</h3>
+                            <p class="btnitem-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        </div>                        
+                        <a href="#" class="btn btn_transparent btn_black btn_small">Read more</a>                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="wrapper section-wrapper">
+        <div>
+            <h2 class="section-header__heading">Latest works</h2>
+            <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="section-btn">
+                <div class="btn-inner">
+                    <a href="#" class="btn btn_small btn_active">all</a>
+                </div>
+                <div class="btn-inner">
+                    <a href="#" class="btn btn_small btn_active">web design</a>
+                </div>
+                <div class="btn-inner">
+                    <a href="#" class="btn btn_small btn_active">ui/ux design</a>
+                </div>
+                <div class="btn-inner">
+                    <a href="#" class="btn btn_small btn_active">mockups</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-items hover-items">
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/1.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/2.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/3.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/4.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/5.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="section-items__inner">
+                <div class="hover-item">
+                    <img src="img/6.png" class="hover-item__img">
+                    <div class="hover-item__overlay">
+                        <div class="hover-item__overlay-content">
+                            <h4 class="h4">Hand Watch</h4>
+                            <p>ui/ux design</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="section-items"
+            <div class="btn-inner">
+                <a href="#" class="btn">view all</a>
+            </div>
+    </div>
+    <div class="section-gray">
+        <div class="wrapper section-wrapper">
+            <div class="section-header">
+                <h2 class="section-header__heading">Pricing Plan</h2>
+                <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="section-items">
+                <div class="price">                       
+                   <img class="price-img" src="./img/фон.png">
+                   <div class ="text">
+                       <p>fjwrngeol</p>
+                    </div>                                                   
+                </div>                
+            </div>
+        </div>
     </div>
 </div>
 
@@ -70,7 +303,7 @@
 </div>    
 <div class="wrapper">
     <div class="section-text">
-        <h1>Web development project</h1>
+        <h2>Web development project</h2>
         <p>Very suitable to support all web development projects</p>
     </div>
     <div class="section-btn">
@@ -83,8 +316,8 @@
 </div>  
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">About us</h1>
-        <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <h2 class="section-header__heading">About us</h2>
+        <p class="btnitem-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section_items">
         <div class="item"></div>
@@ -94,7 +327,7 @@
 </div> 
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Our services</h1>
+        <h2 class="section-header__heading">Our services</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section-items">
@@ -107,7 +340,7 @@
 </div>  
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Latest works</h1>
+        <h2 class="section-header__heading">Latest works</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="section-btn">
             <a href="#" class="btn btn_small">all</a>
@@ -124,7 +357,7 @@
 </div>  
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Pricing Plan</h1>
+        <h2 class="section-header__heading">Pricing Plan</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section-items">
@@ -134,7 +367,7 @@
 </div>
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Our Team Member</h1>
+        <h2 class="section-header__heading">Our Team Member</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section-items">
@@ -144,7 +377,7 @@
 </div>
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Blog</h1>
+        <h2 class="section-header__heading">Blog</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section-items">
@@ -155,7 +388,7 @@
 </div>
 <div class="wrapper">
     <div class="section-header">
-        <h1 class="section-header__heading">Contact us</h1>
+        <h2 class="section-header__heading">Contact us</h2>
         <p class="section-header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="section-items">
