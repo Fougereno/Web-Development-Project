@@ -4,6 +4,9 @@
 body {
     margin: 0;
 }
+.app {
+    overflow: hidden;
+}
 .vhblock {
     height: 100vh; 
     display: flex;
@@ -289,26 +292,24 @@ body {
     font-size: 17px;
     padding-top: 30px;
     padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price__text p{
+    min-height: 60px;
+    padding: 30px 0 15px 0;
+    border-bottom:solid 1px #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .price-img {
     width: 100%;
 }
-.price__item {
-    min-height: 40px;
-    padding: 15px;
-    border-bottom:solid 1px #bfbfbf;
-}
 .price a {
     border-color: #212121;
     min-width: 180px;
-}
-.price__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 100px 60px 100px;
 }
 .price__inner-text {
     padding: 10px 0;
@@ -339,7 +340,6 @@ body {
     color: #00897b;
 }
 .team__inner {
-    width: 33.333%;
     padding: 0 10px;
 }
 .team__item {
@@ -372,7 +372,12 @@ body {
     background: #3949ab;
     color: #fff;
 }
-
+@media screen and (max-width: 1143px) {
+    .section-team {
+        width: 50%;
+        max-width: 400px;
+    }
+}
 @media screen and (max-width: 1015px) {
     .header{
         padding: 46px 15px;
@@ -445,8 +450,11 @@ body {
     .section-anchor {
         padding-bottom: 30px;
     }
-    .price, .team {
+    .team {
         max-width: 300px;
+    }
+    .price {
+        max-width: 250px;
     }
 }
 
