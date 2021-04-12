@@ -351,6 +351,59 @@ body {
     background: #f0f1f1;
     border-radius: 10px;
 }
+.blog {
+    width: 100%;
+    display: flex;
+    color: #212121;
+}
+.blog__img{
+    max-width: 547px;
+    max-height: 400px;
+}
+.blog__text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    padding: 65px 30px 0 30px;
+    text-align: left;
+    max-width: 460px;
+}
+.blog__icons {
+    display: flex;
+    font-weight: 600;
+    padding: 30px 0;
+}
+.blog__icons i {
+    padding-right: 15px;
+}
+.blog__icons p{
+    padding-right: 40px;
+}
+.h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.text-height {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.blog-btn {
+    padding-top: 125px;
+}
+.blog:nth-child(even) {
+    justify-content: space-between;
+}
+.blog:nth-child(even) .blog__img  {
+    order: 2;
+    max-width: 540px;
+}
+.blog:nth-child(even) .blog__text {
+    padding-left: 0;
+}
+.h5:hover {
+    color: #00897b;
+    cursor: pointer;
+}
 .hover-item:hover .hover-item__overlay {
     display: block;
 }
@@ -377,6 +430,12 @@ body {
         width: 50%;
         max-width: 400px;
     }
+    .blog__img {
+        max-width:450px;
+    }
+    .blog:nth-child(even) .blog__img  {
+        max-width:450px;
+    }
 }
 @media screen and (max-width: 1015px) {
     .header{
@@ -396,6 +455,12 @@ body {
     .section-items__inner {
         width: 50%;
         max-width: 400px;
+    }
+    .blog__img {
+        max-width:400px;
+    }
+    .blog:nth-child(even) .blog__img  {
+        max-width:400px;
     }
 }
 .btn_active:active {
@@ -420,6 +485,27 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog:first-child {
+        padding-bottom: 60px;
+    }
+    .blog:nth-child(even) .blog__text {
+        padding: 65px 30px 65px 30px;;
+    }
+    .blog:nth-child(even) {
+       flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog__img {
+        max-width:350px;
+    }
+    .blog:nth-child(even) .blog__img  {
+        max-width:350px;
     }
 }
 @media screen and (max-width: 470px) {
@@ -455,6 +541,15 @@ body {
     }
     .price {
         max-width: 250px;
+    }
+    .blog__img {
+        max-width:300px;
+    }
+    .blog:nth-child(even) .blog__img  {
+        max-width:300px;
+    }
+    .blog__text {
+        font-size: smaller;
     }
 }
 
