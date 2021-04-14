@@ -485,7 +485,7 @@ body {
     justify-content: space-between;
 }
 .blog:nth-child(even) .blog__img  {
-    order: 2;
+    order: 1;
     max-width: 540px;
 }
 .blog:nth-child(even) .blog__text {
@@ -523,12 +523,12 @@ body {
     }
     .blog__img {
         width: 45%;
-        height: 350px;
+        height: auto;
         object-fit: contain;
     }
     .blog:nth-child(even) .blog__img  {
         width: 45%;
-        height: 350px;
+        height: auto;
         object-fit: contain;
     }
 }
