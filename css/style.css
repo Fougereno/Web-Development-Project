@@ -112,6 +112,8 @@ body {
     font-size: 20px;    
     letter-spacing: 1px;
     border: 0 none;
+    transition: background-color, border-color;
+    transition-duration: 0.5s;
 }
 .btn_transparent {
     background-color: transparent;
@@ -575,7 +577,7 @@ body {
 .btn_transparent:hover, .btn_small:hover {
     color: #fff;
     background-color: #00897b;
-    border: none;
+    border-color: #00897b
 }
 .section-items_btnitems:hover .btnimg {
     display: block;
