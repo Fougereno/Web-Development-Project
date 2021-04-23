@@ -482,7 +482,11 @@ body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 600;    
+    transition: box-shadow 0.5s;
+}
+.block:hover {
+    box-shadow: 0 0 10px #fff;
 }
 .block__25 {
     width: 25%;
@@ -555,6 +559,23 @@ body {
 .section-items_btnitems:hover {
     color: #fff;
     background: #00897b;
+}
+.section-anchor a:hover {
+    filter: brightness(0.6);
+}
+.btn:hover {
+    background-color: transparent;
+    box-shadow: 0 0 3px #212121;
+    text-shadow: 0 0 7px #000;
+    border: white solid 3px;
+}
+.block:focus {
+    border: 3px solid #00897b; 
+   }
+.btn_transparent:hover, .btn_small:hover {
+    color: #fff;
+    background-color: #00897b;
+    border: none;
 }
 .section-items_btnitems:hover .btnimg {
     display: block;
