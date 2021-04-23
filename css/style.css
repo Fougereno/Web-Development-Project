@@ -285,6 +285,28 @@ body {
     background-color: #fff;
     min-height: 670px;
     max-width: 375px;  
+    overflow: hidden;
+    position: relative;
+}
+.price__price {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding-bottom: 70px;
+    letter-spacing: 1px;
+}
+.price__dlr {
+    font-size: 25px;
+    top: -20px;
+    position: relative;
+    line-height: 0;
+}
+.price__p-50 {
+    font-size: 50px;
+    letter-spacing: 2px;
 }
 .price__text {
     width: 180px;
@@ -295,6 +317,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 .price__text p{
     min-height: 60px;
@@ -384,6 +408,10 @@ body {
 .h5 {
     font-size: 25px;
     font-weight: 600;
+}
+.h6 {
+    font-size: 25px;
+    padding: 50px 0 20px 0;
 }
 .text-height {
     font-size: 15px;
@@ -481,6 +509,15 @@ body {
     font-weight: 600;
     padding: 15px;
 }
+.price::before {
+    content: "";
+    display: block;
+    background-color: #3949ab;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    transform: rotate(-5deg) translateY(-20px);
+}
 .blog:nth-child(even) {
     justify-content: space-between;
 }
@@ -491,12 +528,25 @@ body {
 .blog:nth-child(even) .blog__text {
     padding-left: 0;
 }
+.header__item a:hover {
+    text-shadow: 1px 1px 3px #bfbfbf;
+}
+.btn, .section-anchor a:hover {
+    cursor: url('../img/белый-курсор.png'), auto;
+}
+.btn_cursor, .header__item a:hover {
+    cursor: url('../img/курсор.png'), auto;
+}
 .h5:hover {
     color: #00897b;
     cursor: pointer;
 }
 .hover-item:hover .hover-item__overlay {
     display: block;
+    box-shadow: 0 0 10px #212121;
+}
+.block:hover {
+    cursor: url('../img/текст.png'), auto;
 }
 .section-items_btnitems:hover a {
     border: white solid 3px;
@@ -595,6 +645,9 @@ body {
     .blog:nth-child(even) {
        flex-direction: column-reverse;
     }
+    .price {
+        min-width: 370px;
+    }    
 }
 @media screen and (max-width: 470px) {
     .section-btn {
@@ -602,6 +655,9 @@ body {
     }
     .section-items__inner {
         width: auto;
+    }
+    .price {
+        min-width: 270px;
     }
 }
 @media screen and (max-width: 414px) {
@@ -626,9 +682,6 @@ body {
     }
     .team {
         max-width: 300px;
-    }
-    .price {
-        max-width: 250px;
     }
     .blog__text {
         font-size: smaller;
